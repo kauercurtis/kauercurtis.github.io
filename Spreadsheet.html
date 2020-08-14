@@ -1,58 +1,68 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
-<head>
-
-<title>Spreadsheet</title>
-
-<style>
-    article, aside, figure, footer, header, hgroup, 
-    menu, nav, section { display: block; }
-</style>
+    <head>
+    <title>Spreadsheet Creator</title>
 
 <script>
- var column1 = [];
- var column2 = [];
- var column3 = [];
 
- var column1Input = document.getElementById("column1");
- var column2Input = document.getElementById("column2");
- var column3Input = document.getElementById("column3");
+var column1=new Array();
+var column2=new Array();
+var column3=new Array();
 
- var messageBox = document.getElementById("display");
+function insert(){
+    var column1Value = document.getElementById('column1').value;
+    var column2Value = document.getElementById('column2').value;
+    var column3Value = document.getElementById('column3').value;
+    column1[column1.length]=column1Value;
+    column2[column2.length]=column2Value;
+    column3[column3.length]=column3Value;
+  }
 
-function insert() {
- column1.push(column1Input);
- column2.push(column2Input);
- column3.push(column3Input);
-
- clearAndShow();
-}
-
-function clearandshow() {
-    column1Input.value = "";
-    column2Input.value = "";
-    column3Input.value = "";
-
-    messageBox.innerHTML = "";
-
-    messageBox.innerHTML += "Column 1:" + column1.join("<br/>") + "<br/>"
-    messageBox.innerHTML += "Column 2:" + column2.join("<br/>") + "<br/>"
-    messageBox.innerHTML += "Column 3:" + column3.join("<br/>") 
+function show() {
+  var content="<b>All Elements of the Arrays :</b><br>";
+  for(var i = 0; i < column1.length; i++) {
+     content +=column1[i]+"<br>";
+  }
+  for(var i = 0; i < column2.length; i++) {
+     content +=column2[i]+"<br>";
+  }
+  for(var i = 0; i < column3.length; i++) {
+     content +=column3[i]+"<br>";
+  }
+  document.getElementById('display').innerHTML = content;
 }
 
 </script>
-</head>
-<body style="background-color:gray;">
-    <form>
-        <h1>Spreadsheet Creator</h1>
-        <input id="column1" type="text" placeholder="Column 1" />
-        <input id="column2" type="text" placeholder="Column 2" />
-        <input id="column3" type="text" placeholder="Column 3" />
-        <input type="button" value="Save/Show" onclick="insert()" />
-    </form>
-    <div id="display"></div>
 
-</body>
+    </head>
+        <body>
+
+        <form id="form">
+
+            <h1><b>Please enter data</b></h1>
+        <hr size="3"/>
+        <br>
+
+            <label for="column1">Column 1</label> <input id="column1" type="text" /> 
+        <br>
+
+            <label for="column2">Column 2</label><input id="column2" type="text" />
+        <br>
+
+            <label for="column3">Column 3</label><input id="column3" type="text" />
+        <br>
+        <br>
+
+            <input type="button" value="Save" onclick="insert();">
+            <input type="button" value="Show data" onclick="show();"> <br>
+
+            <h2><b>Data:</b></h2>
+        <hr>
+        </form>
+
+        <div id="display">
+
+            </div>
+        </body>
 
 </html>
