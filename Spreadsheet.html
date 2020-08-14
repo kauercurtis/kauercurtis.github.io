@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
+<head>
 
 <title>Spreadsheet</title>
-<body style="background-color:gray;"></body>
 
-<h1>Spreadsheet Creator</h1>
+<style>
+    article, aside, figure, footer, header, hgroup, 
+    menu, nav, section { display: block; }
+</style>
 
-<p>
+<script>
+ var column1 = [];
+ var column2 = [];
+ var column3 = [];
 
-<form>
-    <label for="1column">First Column:</label><br>
-    <input type="text" id="1column" name="1column" value="1column"><br>
-    <label for="2column">Second Column:</label><br>
-    <input type="text" id="2column" name="2column" value="2column"><br>
-    <label for="3column">Third Column:</label><br>
-    <input type="text" id="3column" name="3column" value="3column"><br>
-</form>
+ var column1Input = document.getElementById("column1");
+ var column2Input = document.getElementById("column2");
+ var column3Input = document.getElementById("column3");
 
-</p>
+ var messageBox = document.getElementById("display");
+
+function insert() {
+ column1.push(column1Input);
+ column2.push(column2Input);
+ column3.push(column3Input);
+
+ clearAndShow();
+}
+
+function clearandshow() {
+    column1Input.value = "";
+    column2Input.value = "";
+    column3Input.value = "";
+
+    messageBox.innerHTML = "";
+
+    messageBox.innerHTML += "Column 1:" + column1.join("<br/>") + "<br/>"
+    messageBox.innerHTML += "Column 2:" + column2.join("<br/>") + "<br/>"
+    messageBox.innerHTML += "Column 3:" + column3.join("<br/>") 
+}
+
+</script>
+</head>
+<body style="background-color:gray;">
+    <form>
+        <h1>Spreadsheet Creator</h1>
+        <input id="column1" type="text" placeholder="Column 1" />
+        <input id="column2" type="text" placeholder="Column 2" />
+        <input id="column3" type="text" placeholder="Column 3" />
+        <input type="button" value="Save/Show" onclick="insert()" />
+    </form>
+    <div id="display"></div>
+
+</body>
 
 </html>
