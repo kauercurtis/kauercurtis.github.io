@@ -6,7 +6,64 @@
 <body>
 
 <h1><img src="youtube.png" width="250" height="150">Itube</h1>
-<p>My first paragraph.</p>
+
+<hr>
+
+<style>
+    .button {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+    
+    .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    
+    .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+    
+    .button:hover span {
+    padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+</style>
+<p style="color:Gray;"class="small">
+    <button class="button" style="vertical-align:middle"><span>
+    _<br>
+    _<br>
+    _<br>
+</p>
+<br>
+
+<h2 style="color:Black;">Recommended</h2>
+
+<p2>
+    <pre><img align:="center" src="Saturdays are for the Boys Primere Cut.jpg" width="200" height="100"> <img src="Saturdays are for the Boys trailer.jpg" width="200" height="100"> <img src="Saturdays are for the Boys.jpg" width="200" height="100"></pre>
+</p2>
 
 </body>
 </html>
