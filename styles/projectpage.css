@@ -1,0 +1,66 @@
+header nav a{
+
+    margin-left: 24px; margin-right: 24px;
+
+}
+
+#about_main{
+
+    width: 80%; align-self: center; 
+
+}
+
+#about_header{
+
+    display: flex;
+
+} 
+
+#about_introduction{
+
+    width: 750px; display: flex; flex-direction: column; justify-content: center;
+
+}
+
+#about_introduction h2{
+
+    align-self: center; 
+
+}
+
+#links{
+
+    display: flex; justify-content: center; 
+
+}
+
+#links p{
+
+    width: 80%; align-self: center; text-align: center; font-weight: bold;
+
+}
+
+#about_introduction p:last-child{
+
+    width: 80%; align-self: center; line-height: 1.5; 
+
+}
+
+ul{
+
+    width: 100%; display: flex; list-style-type: none; justify-content: space-around; 
+
+}
+
+ul li{
+
+    min-height: 40px; min-width: 40px; 
+
+}
+
+ul li{
+
+    background-repeat: no-repeat; background-position: center; background-size: cover;
+
+}
+

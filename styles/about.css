@@ -1,0 +1,60 @@
+#about_main{
+
+    width: 80%; align-self: center; 
+
+}
+
+#about_header{
+
+    display: flex;
+
+} 
+
+#picture_placeholder{
+
+    height: 250px; width: 250px; display: block;
+    background-image: url(/images/me.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;
+    border-radius: 5px; 
+}
+
+#about_introduction{
+
+    width: 750px; display: flex; flex-direction: column; justify-content: center;
+
+}
+
+#about_introduction h2{
+
+    align-self: center; 
+
+}
+
+#links{
+
+    display: flex; justify-content: center; 
+
+}
+
+#links p{
+
+    width: 80%; align-self: center; text-align: center; font-weight: bold;
+
+}
+
+#about_introduction p:last-child{
+
+    width: 80%; align-self: center; 
+
+}
+
+#about_main>p:last-child{
+
+    line-height: 1.5;
+
+}
+
+#about_main>p span{
+
+    display: block;
+
+}

@@ -1,0 +1,20 @@
+#picture_placeholder{
+
+    height: 250px; width: 250px; display: block;
+    background-image: url(/images/fuzzy_project.png); background-repeat: no-repeat; background-position: center; background-size: contain;
+    border-radius: 5px; 
+}
+
+ul li:first-child{
+
+    height: 70px; width: 70px; 
+
+}
+
+ul li:first-child{
+
+    background-image: url(/images/icons/davinci_resolve.png);
+
+}
+
+
