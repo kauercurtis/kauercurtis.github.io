@@ -1,0 +1,54 @@
+#project_main{
+
+    width: 80%; align-self: center;
+
+}
+
+#project_main>#recent_projects{
+
+    display: flex; justify-content: space-evenly;
+
+}
+
+.projects{
+
+    width: 250px;
+
+}
+
+.projects>a{
+
+    height: 250px; width: 100%; display: flex; justify-content: center; text-decoration: none; background-color: lightgray;
+
+}
+
+.projects>a:hover span{
+
+     opacity: 0.5; 
+
+}
+
+.projects>a span{
+
+    align-self: flex-end; padding: 8px; color: black; 
+    background-color: hsla(0, 0%, 100%, .9); font-weight: 700; border-radius: 5px;   
+
+}
+
+.projects:first-child a{
+
+    background-image: url(/images/sudoku_screenshot.png); background-position: center; background-repeat: no-repeat; background-size: cover;
+
+}
+
+.projects:nth-child(2) a{
+
+    background-image: url(/images/webdev_schoolwork.png); background-position: center; background-repeat: no-repeat; background-size: cover;
+
+}
+
+.projects:nth-child(3) a{
+
+    background-image: url(/images/fuzzy_project.png); background-position: center; background-repeat: no-repeat; background-size: contain;
+
+}

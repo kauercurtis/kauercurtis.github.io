@@ -1,0 +1,30 @@
+body{
+
+    display: flex; flex-direction: column; justify-content: center;  background-color: #fffafa;
+
+}
+
+header{
+
+    width: 80%; min-height: 150px; align-self: center;
+
+}
+
+header nav{
+
+    height: 40px; border-top: 2px solid black; border-bottom: 2px solid black;
+    display: flex; justify-content: center; margin-top: 4%;  
+
+}
+
+nav a{
+
+    display: flex; justify-content: center;
+
+}
+
+nav a span{
+
+    height: fit-content; width: fit-content; align-self: center;
+
+}
