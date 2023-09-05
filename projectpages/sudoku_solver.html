@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link href="/styles/sudoku.css" type="text/css" rel="stylesheet">
+    <script src="/scripts/sudoku.js"></script>
+</head>
+<body>
+    <main>
+        <div id="top">
+            <div id="sudoku_table">
+                <table>
+                    <tr>
+                        <td id="ninetile1">
+                           <table class="ninetile">
+                                <tr id="row1">
+                                    <td id="1"><input id="square1" value=""></td>
+                                    <td id="2"><input id="square2" value=""></td>
+                                    <td id="3"><input id="square3" value=""></td>
+                                </tr>
+                                <tr id="row2">
+                                    <td id="10"><input id="square10" value=""></td>
+                                    <td id="11"><input id="square11" value=""></td>
+                                    <td id="12"><input id="square12" value=""></td>
+                                </tr>
+                                <tr id="row3">
+                                    <td id="19"><input id="square19" value=""></td>
+                                    <td id="20"><input id="square20" value=""></td>
+                                    <td id="21"><input id="square21" value=""></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="ninetile2">
+                            <table class="ninetile">
+                                <tr id="row1">
+                                    <td id="4"><input id="square4" value=""></td>
+                                    <td id="5"><input id="square5" value=""></td>
+                                    <td id="6"><input id="square6" value=""></td>
+                                </tr>
+                                <tr id="row2">
+                                    <td id="13"><input id="square13" value=""></td>
+                                    <td id="14"><input id="square14" value=""></td>
+                                    <td id="15"><input id="square15" value=""></td>
+                                </tr>
+                                <tr id="row3">
+                                    <td id="22"><input id="square22" value=""></td>
+                                    <td id="23"><input id="square23" value=""></td>
+                                    <td id="24"><input id="square24" value=""></td>
+                                </tr>
+                            </table>                          
+                        </td>
+                        <td id="ninetile3">
+                            <table class="ninetile">
+                                <tr id="row1">
+                                    <td id="7"><input id="square7" value=""></td>
+                                    <td id="8"><input id="square8" value=""></td>
+                                    <td id="9"><input id="square9" value=""></td>
+                                </tr>
+                                <tr id="row2">
+                                    <td id="16"><input id="square16" value=""></td>
+                                    <td id="17"><input id="square17" value=""></td>
+                                    <td id="18"><input id="square18" value=""></td>
+                                </tr>
+                                <tr id="row3">
+                                    <td id="25"><input id="square25" value=""></td>
+                                    <td id="26"><input id="square26" value=""></td>
+                                    <td id="27"><input id="square27" value=""></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="ninetile4">
+                           <table class="ninetile">
+                                <tr id="row4">
+                                    <td id="28"><input id="square28" value=""></td>
+                                    <td id="29"><input id="square29" value=""></td>
+                                    <td id="30"><input id="square30" value=""></td>
+                                </tr>
+                                <tr id="row5">
+                                    <td id="37"><input id="square37" value=""></td>
+                                    <td id="38"><input id="square38" value=""></td>
+                                    <td id="39"><input id="square39" value=""></td>
+                                </tr>
+                                <tr id="row6">
+                                    <td id="46"><input id="square46" value=""></td>
+                                    <td id="47"><input id="square47" value=""></td>
+                                    <td id="48"><input id="square48" value=""></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="ninetile5">
+                            <table class="ninetile">
+                                <tr id="row4">
+                                    <td id="31"><input id="square31" value=""></td>
+                                    <td id="32"><input id="square32" value=""></td>
+                                    <td id="33"><input id="square33" value=""></td>
+                                </tr>
+                                <tr id="row5">
+                                    <td id="40"><input id="square40" value=""></td>
+                                    <td id="41"><input id="square41" value=""></td>
+                                    <td id="42"><input id="square42" value=""></td>
+                                </tr>
+                                <tr id="row6">
+                                    <td id="49"><input id="square49" value=""></td>
+                                    <td id="50"><input id="square50" value=""></td>
+                                    <td id="51"><input id="square51" value=""></td>
+                                </tr>
+                            </table>                           
+                        </td>
+                        <td id="ninetile6">
+                            <table class="ninetile">
+                                <tr id="row4">
+                                    <td id="34"><input id="square34" value=""></td>
+                                    <td id="35"><input id="square35" value=""></td>
+                                    <td id="36"><input id="square36" value=""></td>
+                                </tr>
+                                <tr id="row5">
+                                    <td id="43"><input id="square43" value=""></td>
+                                    <td id="44"><input id="square44" value=""></td>
+                                    <td id="45"><input id="square45" value=""></td>
+                                </tr>
+                                <tr id="row6">
+                                    <td id="52"><input id="square52" value=""></td>
+                                    <td id="53"><input id="square53" value=""></td>
+                                    <td id="54"><input id="square54" value=""></td>
+                                </tr>
+                            </table>                           
+                        </td>
+                    </tr>
+                    <tr>
+                       <td id="ninetile7">
+                            <table class="ninetile">
+                                <tr id="row7">
+                                    <td id="55"><input id="square55" value=""></td>
+                                    <td id="56"><input id="square56" value=""></td>
+                                    <td id="57"><input id="square57" value=""></td>
+                                </tr>
+                                <tr id="row8">
+                                    <td id="64"><input id="square64" value=""></td>
+                                    <td id="65"><input id="square65" value=""></td>
+                                    <td id="66"><input id="square66" value=""></td>
+                                </tr>
+                                <tr id="row9">
+                                    <td id="73"><input id="square73" value=""></td>
+                                    <td id="74"><input id="square74" value=""></td>
+                                    <td id="75"><input id="square75" value=""></td>
+                                </tr>
+                            </table> 
+                        </td>
+                        <td id="ninetile8">
+                           <table class="ninetile">
+                                <tr id="row7">
+                                    <td id="58"><input id="square58" value=""></td>
+                                    <td id="59"><input id="square59" value=""></td>
+                                    <td id="60"><input id="square60" value=""></td>
+                                </tr>
+                                <tr id="row8">
+                                    <td id="67"><input id="square67" value=""></td>
+                                    <td id="68"><input id="square68" value=""></td>
+                                    <td id="69"><input id="square69" value=""></td>
+                                </tr>
+                                <tr id="row9">
+                                    <td id="76"><input id="square76" value=""></td>
+                                    <td id="77"><input id="square77" value=""></td>
+                                    <td id="78"><input id="square78" value=""></td>
+                                </tr>
+                            </table>
+                        </td>
+                       <td id="ninetile9">
+                            <table class="ninetile">
+                                <tr id="row7">
+                                    <td id="61"><input id="square61" value=""></td>
+                                    <td id="62"><input id="square62" value=""></td>
+                                    <td id="63"><input id="square63" value=""></td>
+                                </tr>
+                                <tr id="row8">
+                                    <td id="70"><input id="square70" value=""></td>
+                                    <td id="71"><input id="square71" value=""></td>
+                                    <td id="72"><input id="square72" value=""></td>
+                                </tr>
+                                <tr id="row9">
+                                    <td id="79"><input id="square79" value=""></td>
+                                    <td id="80"><input id="square80" value=""></td>
+                                    <td id="81"><input id="square81" value=""></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="numpad">
+               <table>
+                    <tr id="123">
+                        <td id="one">
+                            <button id="_1">1</button>
+                        </td>
+                        <td id="two">
+                            <button id="_2">2</button>
+                        </td>
+                        <td id="three">
+                            <button id="_3">3</button>
+                        </td>
+                    </tr>
+                    <tr id="456">
+                        <td id="four">
+                            <button id="_4">4</button>
+                        </td>
+                        <td id="five">
+                            <button id="_5">5</button>
+                        </td>
+                        <td id="six">
+                            <button id="_6">6</button>
+                        </td>
+                    </tr>
+                    <tr id="789">
+                        <td id="seven">
+                            <button id="_7">7</button>
+                        </td>
+                        <td id="eight">
+                            <button id="_8">8</button>
+                        </td>
+                        <td id="nine">
+                            <button id="_9">9</button>
+                        </td>
+                    </tr>
+                    <tr id="utility">
+                        <td id="submit">
+                            <button id="input">Submit</button>
+                        </td>
+                        <td id="extra_space"></td>
+                        <td id="_clear">
+                            <button id="clear">Clear</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+        <div id="text">
+            <h2>Operating Instructions</h2>
+            <p>
+                Click on a square and type<span>, or use the numpad,</span> to input the 
+                starting numbers for the Sudoku puzzle. Once all the given values are inputted, 
+                press the submit button in the numpad. To clear all values in the Sudoku puzzle, 
+                press the clear button in the numpad. 
+            </p>
+        </div>
+    </main>
+</body>
+</html>

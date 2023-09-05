@@ -1,0 +1,176 @@
+body{
+    background-color: #fffafa; display: flex; justify-content: center;
+}
+
+/*-mobile-*/
+
+/*structure*/ 
+
+main{
+    min-height: 400px; min-width: 300px; margin-top: 100px;
+}
+
+#top{
+    min-height: 300px; min-width: 300px;
+}
+
+#sudoku_table{
+    min-height: 300px;
+}
+
+#numpad{
+    min-height: 100px;
+}
+
+#text{
+    min-height: 100px; min-width: 300px;
+}
+
+/*tables*/
+
+#sudoku_table>table{
+    height: 300px; width: 300px; background-color: black;
+}
+
+#sudoku_table>table tr{
+    height: 32%; width: 100%;
+}
+
+#sudoku_table>table tr td{
+    height: 33%; width: 33%; 
+}
+
+.ninetile{
+    height: 100%; width: 100%; 
+}
+
+.ninetile tr{
+    height: 32%; width: 100%; 
+}
+
+.ninetile tr td{
+    height: 33%; width: 33%;
+}
+
+.ninetile tr td input{
+    height: 90%; width: 90%; 
+}
+
+#numpad>table {
+    height: 100%; width: 100%; 
+}
+
+#numpad>table tr{
+    height: 25%; width: 100%;
+}
+
+#numpad>table tr td{
+    height: 25%; width: 32%; 
+}
+
+#numpad>table tr td button{
+    height: 100%; width: 100%;     
+}
+
+#numpad>table tr:nth-child(1) td, #numpad>table tr:nth-child(2) td, #numpad>table tr:nth-child(3) td
+{
+    display: none;
+}
+
+/*text*/
+#text>h2{
+
+    border-bottom: 2px solid black;
+
+}
+
+#text>p span{
+
+    display: none;
+
+}
+
+
+/*-Tablets-*/
+
+@media screen and (min-width: 600px){
+
+    /*structure*/
+
+    main{
+        min-height: 700px; min-width: 600px;
+    }
+
+    #top{
+        min-height: 600px; min-width: 600px;
+    }
+
+    #sudoku_table{
+        min-height: 400px; display: flex; justify-content: center;
+    }
+    
+    #numpad{
+        min-height: 200px;
+    }    
+
+    #text{
+        min-height: 200px; min-width: 600px;
+    }
+
+    /*tables*/
+
+    #sudoku_table>table{
+        height: 500px; width: 500px; 
+    }
+}
+
+/*-Desktops-*/
+
+@media screen and (min-width: 1000px){
+    
+    /*structure*/
+
+    main{
+        height: 600px; width: 800px; margin-top: unset;
+    }
+    
+    #top{
+        min-height: unset; min-width: unset; height: 400px; width: 800px;  
+        display: flex; flex-direction: row;
+    }
+
+    #sudoku_table{
+        display: unset; min-height: unset; height: 400px; width: 500px; 
+    }
+    
+    #numpad{
+        min-height: unset; height: 400px;  width: 300px;
+    }
+
+    #text{
+        min-height: 200px; min-width: 800px;
+    }
+
+    /*tables*/
+
+    #sudoku_table>table{
+        height: 400px; width: 500px; 
+    }
+
+    #numpad>table tr:nth-child(1) td, #numpad>table tr:nth-child(2) td, #numpad>table tr:nth-child(3) td
+    {
+        display: table-cell;
+    }
+
+    #text>p{
+
+        line-height: 1.8;
+
+    }
+
+    #text>p span{
+
+        display: inline;
+
+    }
+}
