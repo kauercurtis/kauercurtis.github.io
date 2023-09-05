@@ -45,15 +45,20 @@ header>nav>ul>li:nth-child(2) a{
 
 }
 
+.projects a{
+
+    background-position: center; background-repeat: no-repeat; background-size: cover;
+
+}
 .projects:first-child a{
 
-    background-image: url(/images/sudoku_screenshot.png); background-position: center; background-repeat: no-repeat; background-size: cover;
+    background-image: url(/images/sudoku_screenshot.png); 
 
 }
 
 .projects:nth-child(2) a{
 
-    background-color: grey;
+    background-image: url(/images/portfolio_screenshot.png); 
 
 }
 
