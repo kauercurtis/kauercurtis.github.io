@@ -1,66 +1,29 @@
-header nav a{
+header>nav>ul>li:first-child a{
+    text-decoration: underline; background-color: unset;
+}
 
-    margin-left: 24px; margin-right: 24px;
+#picture_placeholder{
+
+    background-image: url(/images/sudoku_screenshot.png); width: 350px; 
 
 }
 
-#about_main{
-
-    width: 80%; align-self: center; 
-
+#tools li:first-child{
+    background-image: url(/images/icons/html.png);
 }
 
-#about_header{
-
-    display: flex;
-
-} 
-
-#about_introduction{
-
-    width: 750px; display: flex; flex-direction: column; justify-content: center;
-
+#tools li:nth-child(2){
+    background-image: url(/images/icons/css.png); background-size: contain;
 }
 
-#about_introduction h2{
-
-    align-self: center; 
-
+#tools li:nth-child(3){
+    background-image: url(/images/icons/javascript.png);
 }
 
-#links{
-
-    display: flex; justify-content: center; 
-
+#tools li:nth-child(4){
+    background-image: url(/images/icons/github.png);
 }
 
-#links p{
-
-    width: 80%; align-self: center; text-align: center; font-weight: bold;
-
+#tools li:last-child{
+    background-image: url(/images/icons/visualstudio.png);
 }
-
-#about_introduction p:last-child{
-
-    width: 80%; align-self: center; line-height: 1.5; 
-
-}
-
-ul{
-
-    width: 100%; display: flex; list-style-type: none; justify-content: space-around; 
-
-}
-
-ul li{
-
-    min-height: 40px; min-width: 40px; 
-
-}
-
-ul li{
-
-    background-repeat: no-repeat; background-position: center; background-size: cover;
-
-}
-

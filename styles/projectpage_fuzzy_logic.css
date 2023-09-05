@@ -5,13 +5,13 @@
     border-radius: 5px; 
 }
 
-ul li:first-child{
+h3>ul li:first-child{
 
     height: 70px; width: 70px; 
 
 }
 
-ul li:first-child{
+h3>ul li:first-child{
 
     background-image: url(/images/icons/davinci_resolve.png);
 
