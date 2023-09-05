@@ -1,29 +1,28 @@
 #picture_placeholder{
-
-    height: 250px; width: 250px; display: block;
+    height: 250px; width: 350px;
     background-image: url(/images/webdev_schoolwork.png); background-repeat: no-repeat; background-position: center; background-size: cover;
     border-radius: 5px; 
 }
 
-ul li:first-child, ul li:nth-child(2), ul li:last-child{
+h3 ul li:first-child, h3 ul li:nth-child(2), h3 ul li:last-child{
 
     width: 70px; 
 
 }
 
-ul li:first-child{
+h3 ul li:first-child{
 
     background-image: url(/images/icons/javascript.png);
 
 }
 
-ul li:nth-child(2){
+h3 ul li:nth-child(2){
 
     height: 70px; background-image: url(/images/icons/github.png);
 
 }
 
-ul li:last-child{
+h3 ul li:last-child{
 
     background-image: url(/images/icons/visualstudio.png);
 

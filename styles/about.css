@@ -1,60 +1,56 @@
+header>nav>ul>li:first-child a{
+    text-decoration: none; background-color: lightgray;
+}
+
 #about_main{
-
-    width: 80%; align-self: center; 
-
+    width: 80%; align-self: center;
+    display: flex; flex-direction: column; 
 }
 
 #about_header{
-
-    display: flex;
-
+    width: 80%; display: flex; align-self: center;
 } 
 
 #picture_placeholder{
-
     height: 250px; width: 250px; display: block;
     background-image: url(/images/me.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;
     border-radius: 5px; 
 }
 
 #about_introduction{
-
     width: 750px; display: flex; flex-direction: column; justify-content: center;
-
 }
 
 #about_introduction h2{
-
     align-self: center; 
-
 }
 
 #links{
-
     display: flex; justify-content: center; 
-
 }
 
 #links p{
-
     width: 80%; align-self: center; text-align: center; font-weight: bold;
-
 }
 
 #about_introduction p:last-child{
-
     width: 80%; align-self: center; 
-
 }
 
-#about_main>p:last-child{
-
-    line-height: 1.5;
-
+#about_main>h3{
+    margin-bottom: 0;
 }
 
-#about_main>p span{
+#about_main p span{
+    font-weight: bold;
+}
 
-    display: block;
+#tools{
+    display: flex; list-style: none;
+}
+
+#tools li{
+
+    height: 50px; width: 50px; margin-right: 16px; background-repeat: no-repeat; background-position: center; background-size: cover;
 
 }
