@@ -1,7 +1,3 @@
-header>nav>ul>li:first-child a{
-    text-decoration: none; background-color: lightgray;
-}
-
 #about_main{
     width: 80%; align-self: center;
     display: flex; flex-direction: column;
@@ -16,12 +12,6 @@ header>nav>ul>li:first-child a{
     height: 250px; width: 250px; border-radius: 5px; 
 
 }
-/*
-#picture_placeholder{
-    height: 250px; width: 250px; display: block;
-    background-image: url(/images/me.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;
-    border-radius: 5px; 
-}*/
 
 #about_introduction{
     width: 750px; display: flex; flex-direction: column; justify-content: center;

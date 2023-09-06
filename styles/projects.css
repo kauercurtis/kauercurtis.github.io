@@ -1,69 +1,36 @@
-header>nav>ul>li:nth-child(2) a{
-    text-decoration: none; background-color: lightgray;
-}
-
 #project_main{
-
     width: 80%; align-self: center; display: flex; flex-direction: column;
-
 }
 
 #project_main h2{
-
     align-self: center; margin-bottom: 32px; 
-
 }
 
-#project_main>#recent_projects{
+#project_main>section{
+    display: flex; justify-content: space-evenly; flex-direction: column;
+}
 
-    display: flex; justify-content: space-evenly;
-
+.project_row{
+    height: 300px; display: flex; justify-content: space-evenly;
 }
 
 .projects{
-
     width: 250px;
-
 }
 
 .projects>a{
-
-    height: 250px; width: 100%; display: flex; justify-content: center; text-decoration: none; background-color: lightgray;
-
+    height: 250px; width: 100%; background-color: lightgray; display: block; text-align: center;
 }
 
 .projects>a:hover span{
-
      opacity: 0.5; 
-
 }
 
-.projects>a span{
-
-    align-self: flex-end; padding: 8px; color: black; 
-    background-color: hsla(0, 0%, 100%, .9); font-weight: 700; border-radius: 5px;   
-
+.projects>a img{
+    height: 100%; width: 100%; 
 }
 
-.projects a{
-
-    background-position: center; background-repeat: no-repeat; background-size: cover;
-
-}
-.projects:first-child a{
-
-    background-image: url(/images/sudoku_screenshot.png); 
-
-}
-
-.projects:nth-child(2) a{
-
-    background-image: url(/images/portfolio_screenshot.png); 
-
-}
-
-.projects:nth-child(3) a{
-
-    background-color: grey;
-
+.projects>a>span{
+    padding: 8px; color: black;
+    background-color: hsla(0, 0%, 100%, .9); font-weight: 700; border-radius: 5px;
 }

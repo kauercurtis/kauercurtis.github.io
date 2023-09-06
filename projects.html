@@ -1,52 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <title>CK Portfolio Projects</title>
-
     <link href="styles/main.css" type="text/css" rel="stylesheet">
     <link href="styles/projects.css" type="text/css" rel="stylesheet">
-
+    <style>
+      header>nav>ul>li:nth-child(2) a{
+        text-decoration: none; background-color: lightgray;
+      }
+    </style>
   </head>
   <body>
-
     <header>
-
       <h1>Curtis Kauer: Portfolio</h1>
-
       <nav>
         <ul>
           <li><a href="index.html"><span>About</span></a></li>
           <li><a href=""><span>Projects</span></a></li>
         </ul>
       </nav>
-
     </header>
-
     <main id="project_main">
-
         <h2>Projects</h2>
-        <div id="recent_projects">
-
+        <section>
+          <div class="project_row">
             <div class="projects">
-
-                <a href="projectpages/project_sudoku.html"><span>Sudoku Solver</span></a>
-
+              <a href="projectpages/project_sudoku.html"><img src="images/sudoku_screenshot.png"><span>Sudoku Solver</span></a>
             </div>
             <div class="projects">
-
-                <a href="projectpages/project_portfolio.html"><span>Portfolio Website</span></a>
-
+              <a href="projectpages/project_portfolio.html"><img src="images/portfolio_screenshot.png"><span>Portfolio Website</span></a>
             </div>
             <div class="projects">
-
-                <a href=""><span>TBA</span></a>
-
+              <a href="projectcollections/projects_cs325.html"><img src="images/icons/folder.png"><span>CS 325 Algorithms Classwork</span></a>
             </div>
-
-        </div>
-
+          </div>
+        </section>
     </main>
-
   </body>
 </html>
