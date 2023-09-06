@@ -20,7 +20,7 @@ header>nav>ul>li{
 }
 
 header>nav>ul>li>a{
-    height: 100%; width: 100%; display: block; border-radius: 5px;
+    height: 100%; width: 100%; display: block; border-radius: 5px; text-decoration: underline; background-color: unset;
 }
 
 header>nav>ul>li>a span{
