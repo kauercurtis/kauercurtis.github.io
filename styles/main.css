@@ -16,7 +16,7 @@ header>nav>ul{
 }
 
 header>nav>ul>li{
-    height: 50%; width: 56px; margin-right: 16px; margin-left: 16px; align-self: center; 
+    height: 50%; width: fit-content; margin-right: 16px; margin-left: 16px; align-self: center; 
 }
 
 header>nav>ul>li>a{
