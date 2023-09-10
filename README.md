@@ -2,10 +2,12 @@
 
 A Website that displays my projects and cv.
 
--Inspiration-
+Inspiration:
+
 A place to show off my classwork and current projects.
 
--Development Updates-
+Development Updates-
+
 8/31/23: 
 Reorganized all the old files from 2018-2022.
 
@@ -27,5 +29,6 @@ Updated the descriptive text for each project. Added classwork from cs290 and cs
 9/8/23:
 Added additional navigation to classwork specific pages.
 
-
-
+9/10/23:
+Fixed documentation for CS325 Algorithm projects and implemented project 2 of CS290.
+9/
