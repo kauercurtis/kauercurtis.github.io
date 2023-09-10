@@ -31,4 +31,4 @@ Added additional navigation to classwork specific pages.
 
 9/10/23:
 Fixed documentation for CS325 Algorithm projects and implemented project 2 of CS290.
-9/
+
