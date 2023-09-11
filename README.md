@@ -2,6 +2,10 @@
 
 A Website that displays my projects and cv.
 
+Project Naming Schema:
+
+TBA: To be announced/added. 
+
 Inspiration:
 
 A place to show off my classwork and current projects.
@@ -30,5 +34,5 @@ Updated the descriptive text for each project. Added classwork from cs290 and cs
 Added additional navigation to classwork specific pages.
 
 9/10/23:
-Fixed documentation for CS325 Algorithm projects and implemented project 2 of CS290.
+Fixed documentation for CS325 Algorithm projects and implemented project 2 of CS290. Set all documentation for CS290 projects, outside of project 2, to TBA status.
 
