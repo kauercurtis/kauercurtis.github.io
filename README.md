@@ -18,8 +18,7 @@ Content Added- Projects and classwork added or descriptors are edited. (Nothing 
 
 Daily Development Updates:
 
-8/31/23: 
-Reorganized all the old files from 2018-2022.
+8/31/23- Reorganized all the old files from 2018-2022.
 
 9/1/23- Developed and Implemented About and Project pages.
 
